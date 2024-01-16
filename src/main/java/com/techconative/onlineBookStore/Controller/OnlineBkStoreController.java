@@ -77,7 +77,8 @@ public class OnlineBkStoreController {
 		Optional<OnlineBook> bkIsbn = null;
 		bkIsbn = onlineBkStoreService.getBookByIsbn(isbn);
 		if (bkIsbn.isPresent()) {
-			OnlineBook addOnlineBk = onlineBkStoreService.updateBookReviewByIsbn(onlineBkReview);
+			onlineBkReview.setIsbn(isbn);
+			OnlineBook addOnlineBk = onlineBkStoreService.updateBookReview(onlineBkReview);
 			if (addOnlineBk != null)
 				return "Reviews are added successfully for this book ..!";
 			else
