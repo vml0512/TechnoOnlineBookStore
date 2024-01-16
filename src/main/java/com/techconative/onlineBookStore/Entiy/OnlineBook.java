@@ -1,6 +1,5 @@
 package com.techconative.onlineBookStore.Entiy;
 import org.springframework.stereotype.Component;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -18,6 +17,7 @@ public class OnlineBook {
 	private int isbn;
 	private String bkName;
 	private String bkAuthorName;
+	private int bkAuthorId;
 	private int bkPublishYear;
 	private String bkReview;
 	
@@ -26,6 +26,20 @@ public class OnlineBook {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+	
+	
+	public OnlineBook(int isbn, String bkName, String bkAuthorName, int bkAuthorId, int bkPublishYear,
+			String bkReview) {
+		super();
+		this.isbn = isbn;
+		this.bkName = bkName;
+		this.bkAuthorName = bkAuthorName;
+		this.bkAuthorId = bkAuthorId;
+		this.bkPublishYear = bkPublishYear;
+		this.bkReview = bkReview;
+	}
+
+
 	public OnlineBook(int isbn, String bkName, String bkAuthorName, int bkPublishYear, String bkReview) {
 		super();
 		this.isbn = isbn;
@@ -35,6 +49,14 @@ public class OnlineBook {
 		this.bkReview = bkReview;
 	}
 	
+	
+	
+	public int getBkAuthorId() {
+		return bkAuthorId;
+	}
+	public void setBkAuthorId(int bkAuthorId) {
+		this.bkAuthorId = bkAuthorId;
+	}
 	public int getId() {
 		return id;
 	}
@@ -71,10 +93,11 @@ public class OnlineBook {
 	public void setBkReview(String bkReview) {
 		this.bkReview = bkReview;
 	}
+	
 	@Override
 	public String toString() {
 		return "OnlineBook [id=" + id + ", isbn=" + isbn + ", bkName=" + bkName + ", bkAuthorName=" + bkAuthorName
-				+ ", bkPublishYear=" + bkPublishYear + ", bkReview=" + bkReview + "]";
+				+ ", bkAuthorId=" + bkAuthorId + ", bkPublishYear=" + bkPublishYear + ", bkReview=" + bkReview + "]";
 	}
 
 }
