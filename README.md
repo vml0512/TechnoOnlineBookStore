@@ -9,16 +9,16 @@ Online Book Store using Spring Project
 
 # Can directly be tested in browser itself ,
  
- GET -   	http://51.20.6.252:8088/TechOnlineBkStore/api/books
- GET -   	http://51.20.6.252:8088/TechOnlineBkStore/api/books/{isbn}
- GET -	 	http://51.20.6.252:8088/TechOnlineBkStore/api/authors/{authorId}
+ GET -   	http://51.20.6.252:8010/TechOnlineBkStore/api/books
+ GET -   	http://51.20.6.252:8010/TechOnlineBkStore/api/books/{isbn}
+ GET -	 	http://51.20.6.252:8010/TechOnlineBkStore/api/authors/{authorId}
  
 # Should be tested only on POSTMAN Application 
  
- DELETE  -  http://51.20.6.252:8088/TechOnlineBkStore/api/books/{isbn}
- POST -		http://51.20.6.252:8088/TechOnlineBkStore/api/books
- PUT -		http://51.20.6.252:8088/TechOnlineBkStore/api/books/{isbn}/reviews
- PUT  -		http://51.20.6.252:8088/TechOnlineBkStore/api/books/{isbn}
+ DELETE  -  http://51.20.6.252:8010/TechOnlineBkStore/api/books/{isbn}
+ POST -		http://51.20.6.252:8010/TechOnlineBkStore/api/books
+ PUT -		http://51.20.6.252:8010/TechOnlineBkStore/api/books/{isbn}/reviews
+ PUT  -		http://51.20.6.252:8010/TechOnlineBkStore/api/books/{isbn}
 
 
 # OR 
@@ -40,13 +40,13 @@ Then you can try the URLs which are listed below,
 
 Can be tested browser itself ,
  
- GET -   	http://51.20.6.252:8088/TechOnlineBkStore/api/books
- GET -   	http://51.20.6.252:8088/TechOnlineBkStore/api/books/{isbn}
- GET -	 	http://51.20.6.252:8088/TechOnlineBkStore/api/authors/{authorId}
+ GET -   	http://51.20.6.252:8010/TechOnlineBkStore/api/books
+ GET -   	http://51.20.6.252:8010/TechOnlineBkStore/api/books/{isbn}
+ GET -	 	http://51.20.6.252:8010/TechOnlineBkStore/api/authors/{authorId}
  
 # It should be tested only on POSTMAN Application 
  
- DELETE  -  http://51.20.6.252:8088/TechOnlineBkStore/api/books/{isbn}
- POST -		http://51.20.6.252:8088/TechOnlineBkStore/api/books
- PUT -		http://51.20.6.252:8088/TechOnlineBkStore/api/books/{isbn}/reviews
- PUT  -		http://51.20.6.252:8088/TechOnlineBkStore/api/books/{isbn}
+ DELETE  -  http://51.20.6.252:8010/TechOnlineBkStore/api/books/{isbn}
+ POST -		http://51.20.6.252:8010/TechOnlineBkStore/api/books
+ PUT -		http://51.20.6.252:8010/TechOnlineBkStore/api/books/{isbn}/reviews
+ PUT  -		http://51.20.6.252:8010/TechOnlineBkStore/api/books/{isbn}
