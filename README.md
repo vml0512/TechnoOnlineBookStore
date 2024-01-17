@@ -3,28 +3,7 @@ Online Book Store using Spring Project
 
 
 #How to run the application 
-
-
-# To be tested URLs :
-
-# Can directly be tested in browser itself ,
  
- GET -   	http://51.20.6.252:8020/TechOnlineBkStore/api/books
- GET -   	http://51.20.6.252:8020/TechOnlineBkStore/api/books/{isbn}
- GET -	 	http://51.20.6.252:8020/TechOnlineBkStore/api/authors/{authorId}
- 
-# Should be tested only on POSTMAN Application 
- 
- DELETE  -  http://51.20.6.252:8020/TechOnlineBkStore/api/books/{isbn}
- POST -		http://51.20.6.252:8020/TechOnlineBkStore/api/books
- PUT -		http://51.20.6.252:8020/TechOnlineBkStore/api/books/{isbn}/reviews
- PUT  -		http://51.20.6.252:8020/TechOnlineBkStore/api/books/{isbn}
-
-
-# OR 
- 
- 
-
 1. Open the Putty 
 2. Enter the Host Name as "51.20.6.252" and make sure "connection"(seconds between keep alive)
    should be around 30
